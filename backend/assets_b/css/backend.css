@@ -1,0 +1,11 @@
+/*
+backend main css
+*/
+#backend-body .container {
+  width: 100%;
+}
+#backend-body .container .site-confirmationSalesOrder {
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
+}

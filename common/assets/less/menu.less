@@ -1,0 +1,52 @@
+@import "variables.less";
+/*
+ * menus styles
+*/
+
+nav {
+
+    a.gravatar {
+        padding-top: 10px;
+        padding-bottom: 10px;        
+    }
+
+    ul.navbar-nav {
+        .gravatar img {
+            border: 1px solid @navbar-default-link-color;
+        }
+        
+        & > li.dropdown:hover {
+            & > ul.dropdown-menu { 
+                display: block; 
+            }
+        }
+        
+        li.dropdown-submenu:hover {
+            & > ul.dropdown-menu { 
+                display: block; 
+            }
+        }
+    }
+
+    &.navbar-inverse {
+        ul.navbar-nav {
+            .gravatar img {
+                border: 1px solid @navbar-inverse-link-color;
+            }
+        }        
+    }
+
+}
+
+ul {
+    &.dropdown-menu {
+        a.disabled {
+            pointer-events: none;
+            cursor: not-allowed;
+            filter: alpha(opacity=65);
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            opacity: .65;
+        }
+    }
+}

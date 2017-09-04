@@ -1,0 +1,21 @@
+.bill-index .search-toggle-box {
+  float: left;
+  margin-right: 10px;
+  background: #F5F5F5;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+.bill-index .search-toggle-box .toggle-button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  padding: 8px 8px 8px 9px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.bill-index .bill-search {
+  padding-bottom: 9px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}

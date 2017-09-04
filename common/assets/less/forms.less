@@ -1,0 +1,165 @@
+/*
+ * forms styles
+*/
+
+form {
+    &.form-horizontal {
+        div[class^="col-md"] > .form-group {
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+        div.required > label {
+            //color: red;
+            border-right: red 2px solid;
+        }         
+    }
+
+    &.form-vertical {
+        div.required > label {
+            //color: red;
+            border-left: red 2px solid;
+        }         
+    }    
+
+    .field-group-title {
+        font-size: @font-size-large;
+        text-align: center;
+    }
+
+    .range-field {
+        .form-control:first-child {
+            & > div[class^="col-md"] {
+                padding-left: 0;
+            }
+        }
+        .form-control:last-child {
+            & > div[class^="col-md"] {
+                padding-right: 0;
+            }        
+        }        
+    }    
+
+    .form-group{
+
+        .panel-group {
+            .panel-title {
+                a {
+                    color: @link-color;
+                    width: 100%;
+
+                    &:hover {
+                        color: @link-hover-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .gmap-container {
+        .gmap-control {
+            padding: 0;
+        }
+    }
+
+    .panel-container {
+        padding-top: 10px;
+    }    
+
+    .line {
+        width: 100%;
+        height: 2px;
+        margin: 10px 0;
+        overflow: hidden;
+        font-size: 0;
+    }
+    
+    .line-dashed {
+        background-color: transparent;
+        border-bottom: 1px dashed @breadcrumb-bg !important;
+    }
+    
+    .padding-v-md {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .double-line-top {
+        border-top: @padding-small-vertical double @breadcrumb-bg;
+        padding-top: @padding-small-vertical;
+    }
+
+    .double-line-bottom {
+        border-bottom: @padding-small-vertical double @breadcrumb-bg;
+        padding-bottom: @padding-small-vertical;
+    }
+
+    .double-line-left {
+        border-left: @padding-small-vertical double @breadcrumb-bg;
+        padding-left: @padding-small-vertical;
+    }
+
+    .double-line-right {
+        border-right: @padding-small-vertical double @breadcrumb-bg;
+        padding-right: @padding-small-vertical;
+    }
+
+    .hint-block {
+        font-style: italic; 
+        font-size: 0.85em; 
+        color: @input-color-placeholder;
+        text-align: right;
+    }
+
+    .clearfix:after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    &#cargo-form {
+        .field-group {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    }
+
+    .input-group-control-width-90,
+    .input-control-width-90 {
+        min-width: 90px;
+    }
+    /*
+    div.required > label:after {
+        content: ' *';
+        color: red;
+    }
+    */
+
+    .fsm-label {
+        font-weight: bold; 
+        padding-top: 3px;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .modal-button-group {
+        padding-top: 15px;
+        text-align: right;
+        border-top: 1px solid #e5e5e5;
+    }
+    
+    .btn-submit,
+    .btn-cancel {
+        .bootstrap-dialog-button-icon {
+            margin-right: 3px;
+            top: 2px;
+        }
+    }
+}

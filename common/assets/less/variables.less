@@ -1,0 +1,66 @@
+@import "../../../vendor/bower/bootstrap/less/variables.less";
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Extra large screen
+@container-extra-large-desktop: (1570px + @grid-gutter-width);
+@container-extra-lg:            @container-extra-large-desktop;
+
+// HD screen
+@container-hd-desktop:          (1870px + @grid-gutter-width);
+@container-hd:                  @container-hd-desktop;
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra large screen
+@screen-extra-lg:               1600px;
+@screen-extra-lg-min:           @screen-extra-lg;
+@screen-extra-lg-desktop:       @screen-extra-lg-min;
+
+// HD screen
+@screen-hd:                     1900px;
+@screen-hd-min:                 @screen-hd;
+@screen-hd-desktop:             @screen-hd-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:                 (@screen-sm-min - 1);
+@screen-sm-max:                 (@screen-md-min - 1);
+@screen-md-max:                 (@screen-lg-min - 1);
+@screen-lg-max:                 (@screen-extra-lg-min - 1);
+@screen-extra-lg-max:           (@screen-hd-min - 1);
+
+@font-size-base:                12px;
+
+@cargo-status-prepared:         transparent;
+@cargo-status-submitted:        #CDE9FF;
+@cargo-status-loaded:           #FAFFBD;
+@cargo-status-delivered:        #AEFFB3;
+@cargo-status-lost:             #fcb3b3;
+@cargo-status-default:          @panel-default-heading-bg;
+
+//== Labels
+//
+//##
+
+//** Default label background color
+@label-default-bg-hover:        #e6e6e6;
+@label-default-bg-border:       #adadad;
+//** Primary label background color
+@label-primary-bg-hover:        #286090;
+@label-primary-bg-border:       #204d74;
+//** Success label background color
+@label-success-bg-hover:        #449d44;
+@label-success-bg-border:       #398439;
+//** Info label background color
+@label-info-bg-hover:           #31b0d5;
+@label-info-bg-border:          #269abc;
+//** Warning label background color
+@label-warning-bg-hover:        #ec971f;
+@label-warning-bg-border:       #d58512;
+//** Danger label background color
+@label-danger-bg-hover:         #c9302c;
+@label-danger-bg-border:        #ac2925;

@@ -1,0 +1,103 @@
+/*
+ * tables styles
+*/
+
+// Core variables
+@import "variables.less";
+
+@media (max-width: @screen-extra-lg) {
+    table{
+        font-size: 11px;
+    };
+}
+
+@media (max-width: @screen-lg) {
+    table{
+        font-size: 10px;
+    };
+}
+
+.column-widths(){
+    &.td-mw-50 {
+        min-width: 50px;
+    }    
+    &.td-mw-75 {
+        min-width: 75px;
+    }    
+    &.td-mw-100 {
+        min-width: 100px;
+    }    
+    &.td-mw-125 {
+        min-width: 125px;
+    }    
+    &.td-mw-150 {
+        min-width: 150px;
+    }    
+    &.td-mw-175 {
+        min-width: 175px;
+    }        
+    &.td-mw-200 {
+        min-width: 200px;
+    }
+}
+
+table {
+
+    &.margin-b-none {
+        margin-bottom: 0 !important;
+    }
+
+    td {
+        .btn {
+            //margin-top: 2px;
+        }
+    }
+    
+    td.vcenter {
+        vertical-align: middle !important;
+    }
+    
+    &.kv-grid-table {
+
+        tr {
+            &.cargo-status-submitted {
+                background: @cargo-status-submitted;
+            }
+            &.cargo-status-loaded {
+                background: @cargo-status-loaded;
+            }
+            &.cargo-status-delivered {
+                background: @cargo-status-delivered;
+            }
+            &.cargo-status-lost {
+                background: @cargo-status-lost;
+            }
+        }
+
+        th {
+            .column-widths;
+        }
+
+        td {
+            .column-widths;
+        }
+
+
+        tfoot {
+            td {
+                font-weight: bold;
+            }
+        }
+    }
+    
+    &.kv-table-float {
+        border-top: 1px rgb(221, 221, 221) solid;
+    }
+    
+    .dynamicform_wrapper & {
+        & > tbody > tr > td {
+            vertical-align: middle;
+        }
+    }
+    
+}

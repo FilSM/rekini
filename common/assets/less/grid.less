@@ -1,0 +1,42 @@
+//
+// Grid system
+// --------------------------------------------------
+
+@import "../../../vendor/bower/bootstrap/less/mixins/grid-framework.less";
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+    width: 100%;
+    /*
+    @media (min-width: @screen-extra-lg-min) {
+        width: @container-extra-lg;
+    }
+    @media (min-width: @screen-hd-min) {
+        width: @container-hd;
+    } 
+    */
+}
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+// Extra large grid
+//
+// Columns, offsets, pushes, and pulls for the extra large desktop device range.
+
+@media (min-width: @screen-extra-lg-min) {
+    .make-grid(extra-lg);
+}
+
+// HD grid
+//
+// Columns, offsets, pushes, and pulls for the HD desktop device range.
+
+@media (min-width: @screen-hd-min) {
+    .make-grid(hd);
+}
